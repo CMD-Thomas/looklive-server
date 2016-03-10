@@ -44,15 +44,51 @@ product id.
 The API returns JSON (for now).
 
 #Important note
-Devtools timeline had a lot of issues, the strength of your internet connection + extensions + other internet use may change the times, no test is ever the same. 
+Devtools timeline had a lot of issues, the strength of your internet connection + extensions + other internet use may change the times, no test is ever the same. & Cache can make the difference in seconds
 
 ##Results 
-*With Jquery*
+
+**Detail page**
+**With Jquery**
 Dom loaded: 291ms
+
 First paint: 446ms
+
 Load: 941ms
 
-*Without Jqeury*
+**Without Jqeury**
 Dom loaded: 262ms
+
 Paint: 413ms
+
 Load: 734ms
+
+**Overview page with edited CSS & HTML**
+Before: 
+Dom: 354ms
+
+Paint: 510ms
+
+Load: 6.9s
+
+After:
+Dom:350ms
+
+Paint: 526ms
+
+Load: 6.88s
+
+###Detail page with edited CSS & HTML
+Before
+Dom: 291ms
+
+Paint 446ms
+
+Load 941ms
+
+After
+Dom: 232ms
+
+Paint: 389ms
+
+Load: 617ms
