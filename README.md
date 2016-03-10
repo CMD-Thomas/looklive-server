@@ -44,7 +44,7 @@ product id.
 The API returns JSON (for now).
 
 #Important note
-Devtools timeline had a lot of issues, the strength of your internet connection + extensions + other internet use may change the times, no test is ever the same. & Cache can make the difference in seconds
+Devtools timeline had a lot of issues, the strength of your internet connection + extensions + other internet use may change the times, no test is ever the same. & Cache can make the difference in seconds - perfomance all about whether user visited before or not :O
 
 ##Results 
 
@@ -92,3 +92,25 @@ Dom: 232ms
 Paint: 389ms
 
 Load: 617ms
+
+##Overview page with spritesheet added
+Before: 
+Dom:350ms
+Paint: 526ms
+Load: 6.88s
+
+After:
+Dom: 283ms 
+Paint: 457ms
+Load: 5.82s
+
+##Detail page with Spritesheet added
+Before
+Dom: 232ms
+Paint: 389ms
+Load: 617ms
+
+After
+Dom: 234ms
+Paint: 378ms
+Load: 518ms
