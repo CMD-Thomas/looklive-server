@@ -5,6 +5,7 @@ var stylus          = require('gulp-stylus');
 var minifyCSS       = require('gulp-minify-css');
 var uglify          = require('gulp-uglify');
 var rename          = require('gulp-rename');
+var webp            = require('gulp-webp');
 //Not using concat because we only have 1 js file
 //var concat          = require('gulp-concat');
 var autoprefixer    = require('gulp-autoprefixer');
@@ -36,6 +37,12 @@ gulp.task('stylus', function () {
       .pipe(gulp.dest('public/styles'))
       .pipe(browserSync.reload({stream:true}))
 });
+
+gulp.task('webp', function(){
+  gulp.src('build/images/*.*')
+  .pipe(webp())
+  .pipe(gulp.dest('public/images'))
+})
 
 
 

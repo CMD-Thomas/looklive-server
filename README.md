@@ -124,9 +124,9 @@ Paint: 301ms
 Load: 5.68s 
 
 After 
-Dom: 341ms
-Paint: 398ms
-Load: 5.78s
+Dom: 315ms
+Paint: 375ms
+Load: 5.97s
 
 #Results 
 ##Default fork 
@@ -140,4 +140,9 @@ Load: 5.78s
 
 ##Added spritesheet for the icons
 ![image of spritesheets](http://thomasmachielsen.nl/img/sprite.jpg)
+
+##Added Gulp and changed Header
+Lost some perfomance here, Gulp makes it slower, browser-syn/watches, keeping it because I like it
+![image of gulp](http://thomasmachielsen.nl/img/gulp.jpg)
+
 
