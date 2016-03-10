@@ -130,14 +130,14 @@ Load: 5.78s
 
 #Results 
 ##Default fork 
-![Image of the master fork]http://thomasmachielsen.nl/img/defaultfork.jpg
+![Image of the master fork](http://thomasmachielsen.nl/img/defaultfork.jpg)
 
 ##Deleted jQuery and rewrote app.js 
-![Image of jsnative]http://thomasmachielsen.nl/img/jsnative.jpg
+![Image of jsnative](http://thomasmachielsen.nl/img/jsnative.jpg)
 
 ##Edited CSS & HTML, minified CSS as well
-![Image of Edited css]http://thomasmachielsen.nl/img/css.jpg
+![Image of Edited css](http://thomasmachielsen.nl/img/css.jpg)
 
 ##Added spritesheet for the icons
-![image of spritesheets]http://thomasmachielsen.nl/img/sprite.jpg
+![image of spritesheets](http://thomasmachielsen.nl/img/sprite.jpg)
 
