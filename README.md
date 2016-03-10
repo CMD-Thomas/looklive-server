@@ -1,3 +1,25 @@
+#Results 
+Foreword: Devtools timeline is really untrustworthy, mutiple tests with the same set-up sometimes give other results 
+##Default fork 
+![Image of the master fork](http://thomasmachielsen.nl/img/defaultfork.jpg)
+
+##Deleted jQuery and rewrote app.js 
+![Image of jsnative](http://thomasmachielsen.nl/img/jsnative.jpg)
+
+##Edited CSS & HTML, minified CSS as well
+![Image of Edited css](http://thomasmachielsen.nl/img/css.jpg)
+
+##Added spritesheet for the icons
+![image of spritesheets](http://thomasmachielsen.nl/img/sprite.jpg)
+
+##Added Gulp
+Lost some perfomance here, Gulp makes it slower, browser-syn/watches, keeping it because I like it
+![image of gulp](http://thomasmachielsen.nl/img/gulp.jpg)
+
+##Added gulp-webp 
+Got some perfomance back
+![image of gulp](http://thomasmachielsen.nl/img/webp.jpg)
+
 # LookLive server
 
 The project you're looking at is an [express.js](http://expressjs.com) project. You'll use it to get set up a development environment where you're
@@ -128,21 +150,5 @@ Dom: 315ms
 Paint: 375ms
 Load: 5.97s
 
-#Results 
-##Default fork 
-![Image of the master fork](http://thomasmachielsen.nl/img/defaultfork.jpg)
-
-##Deleted jQuery and rewrote app.js 
-![Image of jsnative](http://thomasmachielsen.nl/img/jsnative.jpg)
-
-##Edited CSS & HTML, minified CSS as well
-![Image of Edited css](http://thomasmachielsen.nl/img/css.jpg)
-
-##Added spritesheet for the icons
-![image of spritesheets](http://thomasmachielsen.nl/img/sprite.jpg)
-
-##Added Gulp and changed Header
-Lost some perfomance here, Gulp makes it slower, browser-syn/watches, keeping it because I like it
-![image of gulp](http://thomasmachielsen.nl/img/gulp.jpg)
 
 
