@@ -1,12 +1,21 @@
-$(document).ready(function(){
-    $('.product').first().addClass('product-active');
-    $(".product-indicator[data-uuid='"+$('.product').first().data('uuid')+"']").addClass('product-indicator-active');
+document.addEventListener("DOMContentLoaded", function() {
+    if(document.querySelector('.product')){
+    	var firstProduct = document.querySelector('.product:first-child');
+    	firstProduct.classList.add('product-active')
+       
+    	var firstProductIndicator = document.querySelector('.product-indicator:first-of-type');
+       	firstProductIndicator.classList.add('product-indicator-active');
 
-    $('.product-indicator').on('click', function(e){
-        var id = $(e.currentTarget).data('uuid');
-        $('.product-indicator-active').removeClass('product-indicator-active');
-        $(e.currentTarget).addClass('product-indicator-active');
-        $('.product.product-active').removeClass('product-active');
-        $(".product[data-uuid='"+id+"']").addClass('product-active');
-    });
+        var productIndicator = document.querySelectorAll('.product-indicator');
+
+        for (var i = productIndicator.length - 1; i >= 0; i--) {
+            productIndicator[i].onclick = function (e){
+                var id = this.dataset.uuid;
+                document.querySelector('.product-indicator-active').classList.remove('product-indicator-active');
+                this.classList.add('product-indicator-active');
+                document.querySelector('.product-active').classList.remove('product-active');
+                document.querySelector(".product[data-uuid='"+id+"']").classList.add('product-active');
+            }
+        };
+    };
 });
