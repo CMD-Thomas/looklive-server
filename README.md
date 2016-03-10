@@ -114,3 +114,30 @@ After
 Dom: 234ms
 Paint: 378ms
 Load: 518ms
+
+Added gulp but since I already minified css & js it did add a few ms however the workflow is much nicer so I kept it...
+
+##Overview with changed header 
+Before
+Dom: 273ms 
+Paint: 301ms
+Load: 5.68s 
+
+After 
+Dom: 341ms
+Paint: 398ms
+Load: 5.78s
+
+#Results 
+##Default fork 
+![Image of the master fork]http://thomasmachielsen.nl/img/defaultfork.jpg
+
+##Deleted jQuery and rewrote app.js 
+![Image of jsnative]http://thomasmachielsen.nl/img/jsnative.jpg
+
+##Edited CSS & HTML, minified CSS as well
+![Image of Edited css]http://thomasmachielsen.nl/img/css.jpg
+
+##Added spritesheet for the icons
+![image of spritesheets]http://thomasmachielsen.nl/img/sprite.jpg
+
