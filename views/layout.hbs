@@ -23,5 +23,18 @@
             {{{body}}}
         </main>
         <script src="/js/output.min.js"></script>
+        <script>        
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/StyleSW.js', { scope: '/' })
+                .then(function(reg) {
+                  console.log('registered StyleSw at scope', reg.scope);
+                })
+                .catch(function(err) {
+                  console.log('error registering StyleSw', err);
+                });
+            } else {
+              console.log('ServiceWorker is not supported');
+            }
+        </script>
     </body>
 </html>

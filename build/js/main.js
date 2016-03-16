@@ -1,7 +1,6 @@
 (function () {
     'use strict';
     function init() {
-
         //credits to Dennis for helping me
         var links = document.querySelectorAll('a[data-url]');
         [].forEach.call(links, function(link) {
