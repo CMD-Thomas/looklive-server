@@ -20,6 +20,9 @@ Lost some perfomance here, Gulp makes it slower, browser-syn/watches, keeping it
 Got some perfomance back
 ![image of gulp](http://thomasmachielsen.nl/img/webp.jpg)
 
+##SPA
+Made it SPA-y, script to body, changed some divs 
+
 # LookLive server
 
 The project you're looking at is an [express.js](http://expressjs.com) project. You'll use it to get set up a development environment where you're
