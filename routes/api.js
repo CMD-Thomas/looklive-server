@@ -1,13 +1,13 @@
-var fs = require('fs');
+var fs      = require('fs');
 var express = require('express');
-var router = express.Router();
+var router  = express.Router();
 
-router.get('/feed', function(req, res, next) {
-    sendFile('feed.json', res);
+router.get('/', function(req, res, next) {
+    res.render('feed', { items: JSON.parse(data), layout: false });
 });
 
 router.get('/appearance/:uuid', function(req, res, next) {
-    sendFile('appearance/'+req.params.uuid+'.json', res);
+    res.render('appearance', { title: item.title, item: item , products: products, layout: false});
 });
 
 router.get('/product/:uuid', function(req, res, next) {
