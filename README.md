@@ -1,4 +1,6 @@
 #Results 
+
+##Week1
 Foreword: Devtools timeline is really untrustworthy, mutiple tests with the same set-up sometimes give other results 
 ##Default fork 
 ![Image of the master fork](http://thomasmachielsen.nl/img/defaultfork.jpg)
@@ -38,6 +40,25 @@ After SPA
 
 #Conclusion
 After painstakingly measuring and measuring and measuring again I know 2 things for sure a) Devtools is really unreliable at times so measurements can be really different, location and other internet users are a big part b) all the small minor changes actually seem to add up at the end, so it's all worth it. The only exception might be Gulp, browser-sync uses a load perfomance and doesn't work well with this current setup.
+
+##Week2
+
+#Progressive Web App Research
+
+A progressive web app has the following requirements 
++ Progressive - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
++ Responsive - Fit any form factor: desktop, mobile, tablet, or whatever is next.
++ Connectivity independent - Enhanced with service workers to work offline or on low quality networks.
++ App-like - Feel like an app to the user with app-style interactions and navigation because it's built on the app shell model.
++ Fresh - Always up-to-date thanks to the service worker update process.
++ Safe - Served via HTTPS to prevent snooping and ensure content hasn’t been tampered with.
++ Discoverable - Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
++ Re-engageable - Make re-engagement easy through features like push notifications.
++ Installable - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
++ Linkable - Easily share via URL and not require complex installation.
+
+A progressive APP loads extremely fast, it sents out static content before anything else so the users get the first static content really fast. Then it gets the rest of the dynamic content all the while using service workers to cache it. By using server workers to cache stuff a progressive APP becomes useful even with LIE-FI or no internet. 
+
 
 
 # LookLive server
@@ -170,21 +191,6 @@ Dom: 315ms
 Paint: 375ms
 Load: 5.97s
 
-#Progressive Web App Research
-
-A progressive web app has the following requirements 
-+ Progressive - Work for every user, regardless of browser choice because they’re built with progressive enhancement as a core tenet.
-+ Responsive - Fit any form factor: desktop, mobile, tablet, or whatever is next.
-+ Connectivity independent - Enhanced with service workers to work offline or on low quality networks.
-+ App-like - Feel like an app to the user with app-style interactions and navigation because it's built on the app shell model.
-+ Fresh - Always up-to-date thanks to the service worker update process.
-+ Safe - Served via HTTPS to prevent snooping and ensure content hasn’t been tampered with.
-+ Discoverable - Are identifiable as “applications” thanks to W3C manifests and service worker registration scope allowing search engines to find them.
-+ Re-engageable - Make re-engagement easy through features like push notifications.
-+ Installable - Allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
-+ Linkable - Easily share via URL and not require complex installation.
-
-A progressive APP loads extremely fast, it sents out static content before anything else so the users get the first static content really fast. Then it gets the rest of the dynamic content all the while using service workers to cache it. By using server workers to cache stuff a progressive APP becomes useful even with LIE-FI or no internet. 
 
 
 
