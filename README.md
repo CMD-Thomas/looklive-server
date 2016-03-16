@@ -36,6 +36,8 @@ Before SPA
 After SPA
 ![image of before SPA](http://thomasmachielsen.nl/img/detailSPA.jpg)
 
+#Conclusion
+After painstakingly measuring and measuring and measuring again I know 2 things for sure a) Devtools is really unreliable at times so measurements can be really different, location and other internet users are a big part b) all the small minor changes actually seem to add up at the end, so it's all worth it. The only exception might be Gulp, browser-sync uses a load perfomance and doesn't work well with this current setup.
 
 
 # LookLive server
