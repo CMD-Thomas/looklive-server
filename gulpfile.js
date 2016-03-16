@@ -6,7 +6,6 @@ var minifyCSS       = require('gulp-minify-css');
 var uglify          = require('gulp-uglify');
 var rename          = require('gulp-rename');
 var webp            = require('gulp-webp');
-//Not using concat because we only have 1 js file
 var concat          = require('gulp-concat');
 var autoprefixer    = require('gulp-autoprefixer');
 
