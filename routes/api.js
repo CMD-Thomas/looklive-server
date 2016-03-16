@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-
     fs.readFile('resources/feed.json', 'utf8', function(err, data) {
         console.log(data)
         if(err) {
@@ -21,7 +20,6 @@ router.get('/appearance/:uuid', function(req, res, next) {
             res.status(404);
             next();
         }
-
         var item = JSON.parse(data);
         var products = [];
 
@@ -29,7 +27,6 @@ router.get('/appearance/:uuid', function(req, res, next) {
             var product = fs.readFileSync('resources/product/'+occurrence.product.id+'.json', 'utf8');
             products.push(JSON.parse(product));
         });
-
         res.render('appearance', { title: item.title, item: item , products: products, layout: false});
     })
 });
