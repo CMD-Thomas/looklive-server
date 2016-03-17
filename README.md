@@ -42,6 +42,9 @@ After SPA
 After painstakingly measuring and measuring and measuring again I know 2 things for sure a) Devtools is really unreliable at times so measurements can be really different, location and other internet users are a big part b) all the small minor changes actually seem to add up at the end, so it's all worth it. The only exception might be Gulp, browser-sync uses a load perfomance and doesn't work well with this current setup.
 
 ##Week2
+#Service Worker
+An error kept bugging up, saying that the service worker exist, which is good so I've ignored the error as per suggestion here http://stackoverflow.com/questions/33328579/service-worker-throwing-an-neterr-file-exists-error
+
 
 #Progressive Web App Research
 
