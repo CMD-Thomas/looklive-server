@@ -25,7 +25,15 @@ gulp.task('js', function(){
   .pipe(uglify()) 
   .pipe(gulp.dest('public/js'))
   .pipe(browserSync.reload({stream:true}))
-})
+});
+
+gulp.task('sw', function(){
+  gulp.src("build/js/StyleSW.js")
+  .pipe(concat('StyleSW.js'))
+  .pipe(uglify()) 
+  .pipe(gulp.dest('public'))
+  .pipe(browserSync.reload({stream:true}))
+});
 
 gulp.task('stylus', function () {
       gulp.src('build/stylesheets/style.styl')
@@ -43,13 +51,12 @@ gulp.task('webp', function(){
   .pipe(gulp.dest('public/images'))
 })
 
-
-
 gulp.task('watch', function () {
-   gulp.watch('build/stylesheets/imports/*.styl', ['stylus']);   
-   gulp.watch('build/js/main.js', ['js']);
+  gulp.watch('build/stylesheets/imports/*.styl', ['stylus']);   
+  gulp.watch('build/js/main.js', ['js']);
+  gulp.watch('build/js/StyleSW.js', ['sw']);
 });
 
 
-gulp.task('default', [ 'stylus', 'watch', 'js', 'browser-sync'],function () {
+gulp.task('default', [ 'stylus', 'watch', 'js', 'browser-sync', 'sw' ],function () {
 });
