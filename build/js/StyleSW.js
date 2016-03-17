@@ -5,8 +5,6 @@ var cacheName       = ServiceWorker+"-"+cacheVersion;
 console.log('started ' +ServiceWorker+ "version: "+ cacheVersion);
 
 this.addEventListener('install', function(event) {
-	console.log(event);
-	console.log("caching stuff");
     event.waitUntil(
         caches.open(cacheName).then(function(cache) {
             return cache.addAll([
@@ -14,7 +12,6 @@ this.addEventListener('install', function(event) {
                 '/styles/style.css',
                 '/js/output.min.js',
                 '/icons/icons.png',
-                '/images/faulty.webp',
                 '/images/header.webp',
                 '/images/logo.webp'
             ]);
@@ -59,15 +56,4 @@ this.addEventListener('fetch', function(event) {
         );
         })
     );
-});
-
-this.addEventListener('activate', function(event) {
-	console.log('activated', event);
-});
-
-this.addEventListener('push', function(event) {
-	console.log('pushed', event);
-});
-this.addEventListener('message', function(event) {
-	console.log('message received', event);
 });
