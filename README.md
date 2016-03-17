@@ -46,17 +46,20 @@ After painstakingly measuring and measuring and measuring again I know 2 things 
 An error kept bugging up, saying that the service worker exist, which is good so I've ignored the error as per suggestion here http://stackoverflow.com/questions/33328579/service-worker-throwing-an-neterr-file-exists-error
 
 Regular cached before SW - overview page
+
 ![image before SW](http://thomasmachielsen.nl/img/finalbranch-overview-cached.jpg)
 
 And now after having a SW
+
 ![image before SW](http://thomasmachielsen.nl/img/sw-cached.jpg)
 
 Really impressive results. 
-
 Regular cached before SW - detail page
+
 ![image before SW](http://thomasmachielsen.nl/img/finalbranch-detail-cached.jpg)
 
 After SW 
+
 ![image before SW](http://thomasmachielsen.nl/img/sw-cached-detail.jpg)
 
 Really impressive results!
