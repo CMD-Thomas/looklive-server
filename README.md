@@ -26,16 +26,20 @@ Got some perfomance back
 Made it SPA-y, script to body, changed some divs 
 Overview page
 Before SPA:
+
 ![image of before SPA](http://thomasmachielsen.nl/img/finalbranch-overview.jpg)
 
 After SPA
+
 ![image of before SPA](http://thomasmachielsen.nl/img/overviewSPA.jpg)
 
 Detail page
 Before SPA 
+
 ![image of before SPA](http://thomasmachielsen.nl/img/finaldetail.jpg)
 
 After SPA
+
 ![image of before SPA](http://thomasmachielsen.nl/img/detailSPA.jpg)
 
 #Conclusion
