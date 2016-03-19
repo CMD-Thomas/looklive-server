@@ -1,5 +1,5 @@
 #Results 
-De feed is te vinden op [https://thomasmachielsen.me](https://thomasmachielsen.me)
+The feed can be found on [https://thomasmachielsen.me](https://thomasmachielsen.me)
 
 
 ##Week2
@@ -85,7 +85,7 @@ After SPA
 ![image of before SPA](http://thomasmachielsen.nl/img/detailSPA.jpg)
 
 #Conclusion
-After painstakingly measuring and measuring and measuring again I know 2 things for sure a) Devtools is really unreliable at times so measurements can be really different, location and other internet users are a big part b) all the small minor changes actually seem to add up at the end, so it's all worth it. The only exception might be Gulp, browser-sync uses a load perfomance and doesn't work well with this current setup.
+After painstakingly measuring and measuring and measuring again I know 2 things for sure a) Devtools is really unreliable at times so measurements can be really different, location and other internet users are a big part b) all the small minor changes actually seem to add up at the end, so it's all worth it. The only exception might be Gulp, browser-sync uses a load perfomance and doesn't work well with this current setup. And webP is an amazing format yet badly supported so next time I should provide a fallback.
 
 
 
