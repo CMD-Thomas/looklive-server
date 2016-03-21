@@ -1,6 +1,22 @@
 #Results 
 The feed can be found on [https://thomasmachielsen.me](https://thomasmachielsen.me)
 
+##Week3 - Well that went fast
+
+**Build Tools**
+Build tools are small scripts which aim to automate things for the developer. Can you image how tedious it would be to minify mutiple js and css files, all by hand? Well that's what build tools solve. Automating tedious boring tasks nobody really wants to do. The most common build tools out there are Grunt and Gulp. Recently I've heard of people using plain npm to automate build tasks though. This to me seems a bit tedious and boring in itself. 
+
+**Gulp I choose you!** 
+I don't recall when I exactly made the choice of Gulp over Grunt, I just know for some reason (maybe I liked the logo more) I picked Gulp.From the little research I've done Grunt doesn't seem much different at all and Gulp treats me lovely so I don't see any reason to change.
+
+I love Gulp because it's easy in use and has a suprisingly strong eco-system. There's a huge load of packages for it and basically everything can be used. In new project I usually start out with my own small Gulp file. 
+
+**What do I use Gulp for?**
+Personally perfomance-wise I use Gulp for minifying, concatting and also for Stylus. Minifying everything is a perfomance win. For developing I also like to use browser-sync and nodemon, so when the back-end changes stuff gets restarted automatically and I use browser-sync to sync my app across all devices. (Even my television, which is awesome or horrible). Also in the looklive server I used webp for my images sadly this is supported so badly so I will change this package to some other image optimisation package. 
+
+**Gulp perfomance**
+Even though I love Gulp there's some things I still have to find out, in my graduation project Gulp starts extremely slow. In the Looklive server I also have 2 functions who are basically the same. I should probably fix this but the destination is different for both files so I'm unsure. 
+
 
 ##Week2
 #Service Worker
