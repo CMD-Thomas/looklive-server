@@ -15,7 +15,13 @@ I love Gulp because it's easy in use and has a suprisingly strong eco-system. Th
 Personally perfomance-wise I use Gulp for minifying, concatting and also for Stylus. Minifying everything is a perfomance win. For developing I also like to use browser-sync and nodemon, so when the back-end changes stuff gets restarted automatically and I use browser-sync to sync my app across all devices. (Even my television, which is awesome or horrible). Also in the looklive server I used webp for my images sadly this is supported so badly so I will change this package to some other image optimisation package. 
 
 **Gulp perfomance**
-Even though I love Gulp there's some things I still have to find out, in my graduation project Gulp starts extremely slow. In the Looklive server I also have 2 functions who are basically the same. I should probably fix this but the destination is different for both files so I'm unsure. 
+Even though I love Gulp there's some things I still have to find out, in my graduation project Gulp starts extremely slow. In the Looklive server I also have 2 functions who are basically the same. I should probably fix this but the destination is different for both files so I'm unsure.
+
+##HTTP requests
+I already minified/concat files with Gulp last week.
+
+##Content images 
+ 
 
 
 ##Week2
