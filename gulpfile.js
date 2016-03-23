@@ -5,9 +5,10 @@ var stylus          = require('gulp-stylus');
 var minifyCSS       = require('gulp-minify-css');
 var uglify          = require('gulp-uglify');
 var rename          = require('gulp-rename');
-var webp            = require('gulp-webp');
 var concat          = require('gulp-concat');
 var autoprefixer    = require('gulp-autoprefixer');
+var imageop         = require('gulp-image-optimization');
+
 
 gulp.task('browser-sync', ['stylus'], function() {
   browserSync.init(null, {
@@ -45,18 +46,24 @@ gulp.task('stylus', function () {
       .pipe(browserSync.reload({stream:true}))
 });
 
-gulp.task('webp', function(){
-  gulp.src('build/images/*.*')
-  .pipe(webp())
-  .pipe(gulp.dest('public/images'))
-})
+
+//WebP task was a LOT better but only for Chrome and Chrome has datasaving anyway 
+gulp.task('images', function(cb) {
+    gulp.src(['build/images/*.*']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('public/images')).on('end', cb).on('error', cb);
+});
+
 
 gulp.task('watch', function () {
+  gulp.watch('build/images/*.*', ['images']);   
   gulp.watch('build/stylesheets/imports/*.styl', ['stylus']);   
   gulp.watch('build/js/main.js', ['js']);
   gulp.watch('build/js/StyleSW.js', ['sw']);
 });
 
 
-gulp.task('default', [ 'stylus', 'watch', 'js', 'browser-sync', 'sw' ],function () {
+gulp.task('default', [ 'stylus', 'watch', 'js', 'browser-sync', 'sw', 'images' ],function () {
 });

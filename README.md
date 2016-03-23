@@ -21,7 +21,7 @@ Even though I love Gulp there's some things I still have to find out, in my grad
 I already minified/concat files with Gulp last week.
 
 ##Content images 
- 
+
 
 
 ##Week2

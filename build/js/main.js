@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     function init() {
-        //credits to Dennis for helping me
+        //credits to Dennis 
         var links = document.querySelectorAll('a[data-url]');
         [].forEach.call(links, function(link) {
             link.addEventListener('click', function(event) {

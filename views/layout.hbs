@@ -3,11 +3,10 @@
     <head>
         <title>{{title}}</title>
         <link rel='stylesheet' href='/styles/style.css' />
-        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <nav>
-            <img class="nav__img nav__logo" src="/images/logo.webp">
+            <img class="nav__img nav__logo" src="/images/logo.png">
             <ul class="nav-items">
                 <li class="nav__li"><a class="nav__link" href="/"><span class="icon-home nav__img"></span>Home</a></li>
                 <li class="nav__li"><a class="nav__link" href="https://looklive.com/discover/"><span class="icon-latest nav__img"></span>Latest</a></li>
@@ -17,13 +16,18 @@
                 <li class="nav__li"><a class="nav__link" href="https://looklive.com/brands/"><span class="icon-brands nav__img"></span>Brands</a></li>
             </ul>
         </nav>
-        <header><img class="header__img" src="/images/header.webp"></header>
+        <header><img class="header__img" src="/images/header.jpg"></header>
 
         <main>
             {{{body}}}
         </main>
-        <script src="/js/output.min.js"></script>
-        <script>        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                  families: ['Raleway:500:latin']
+                }
+            });  
             if ('serviceWorker' in navigator) {
               navigator.serviceWorker.register('/StyleSW.js', { scope: '/' })
                 .then(function(reg) {
@@ -36,5 +40,6 @@
               console.log('ServiceWorker is not supported');
             }
         </script>
+        <script src="/js/output.min.js"></script>
     </body>
 </html>
