@@ -21,6 +21,23 @@
 
             apiCall(url)
         });
+
+        WebFont.load({
+            google: {
+              families: ['Raleway:500:latin']
+            }
+        });  
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/StyleSW.js', { scope: '/' })
+            .then(function(reg) {
+              console.log('registered StyleSw at scope', reg.scope);
+            })
+            .catch(function(err) {
+              console.log('error registering StyleSw', err);
+            });
+        } else {
+          console.log('ServiceWorker is not supported');
+        }
     }
 
     function showProducts() {

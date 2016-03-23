@@ -1,6 +1,15 @@
 #Results 
 The feed can be found on [https://thomasmachielsen.me](https://thomasmachielsen.me)
 
+##Conclusion
+I started out the overview page with a whooping 6.9seconds. In this branch the overview page on a first load has been reduced to 3.8s. It gets even better on the second visit: a mere 970ms. 
+![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/finalweek.jpg)
+
+
+For the detail page I started out with 941ms and reduced that  on a second load to a mere 190ms. Service workers are awesome. 
+![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/detailklaar.jpg)
+
+
 ##Week3 - Well that went fast
 
 **Build Tools**
@@ -19,9 +28,13 @@ Even though I love Gulp there's some things I still have to find out, in my grad
 I already minified/concat files with Gulp last week.
 
 ##Font
-I changed the font so I only load in raleway 500 and latin script. I also added the wf-active class so it only gets aplied when active. However during this I experienced HUGE latency issues with my own home-network. Whereas last week the overview page -with serviceworker- was tagging slightly below or slighly above 1s, I'm experiencing 17seconds now. Even on the master branch. 
+I changed the font so I only load in raleway 500 and latin script. I also added the wf-active class so it only gets aplied when active. Loading time for overview stayed pretty much the same, detail seemed slightly faster. 
 
-![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/font-images.jpg)
+**Overview**
+![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/finalweek.jpg)
+
+**Detail**
+![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/detailklaar.jpg)
 
 ##Week2
 #Service Worker
