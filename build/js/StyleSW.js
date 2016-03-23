@@ -12,8 +12,8 @@ this.addEventListener('install', function(event) {
                 '/styles/style.css',
                 '/js/output.min.js',
                 '/icons/icons.png',
-                '/images/header.webp',
-                '/images/logo.webp'
+                '/images/header.jpg',
+                '/images/logo.png'
             ]);
         })
     );

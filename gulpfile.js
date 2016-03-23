@@ -11,13 +11,12 @@ var imageop         = require('gulp-image-optimization');
 
 
 gulp.task('browser-sync', ['stylus'], function() {
-  browserSync.init(null, {
-        proxy: "http://localhost:3000",
-        files: ["js/main.js"],
-        browser: "google chrome",
-        port: 4000,
-        online: "true"
-  });
+   browserSync.init({
+       server: {
+           startPath: '/',
+           open: true
+       }
+   });
 });
 
 gulp.task('js', function(){
