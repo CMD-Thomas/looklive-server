@@ -12,7 +12,6 @@ I don't recall when I exactly made the choice of Gulp over Grunt, I just know fo
 I love Gulp because it's easy in use and has a suprisingly strong eco-system. There's a huge load of packages for it and basically everything can be used. In new project I usually start out with my own small Gulp file. 
 
 **What do I use Gulp for?**
-the
 **Gulp perfomance**
 Even though I love Gulp there's some things I still have to find out, in my graduation project Gulp starts extremely slow. In the Looklive server I also have 2 functions who are basically the same. I should probably fix this but the destination is different for both files so I'm unsure.
 
@@ -21,6 +20,8 @@ I already minified/concat files with Gulp last week.
 
 ##Font
 I changed the font so I only load in raleway 500 and latin script. I also added the wf-active class so it only gets aplied when active. However during this I experienced HUGE latency issues with my own home-network. Whereas last week the overview page -with serviceworker- was tagging slightly below or slighly above 1s, I'm experiencing 17seconds now. Even on the master branch. 
+
+![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/font-images.jpg)
 
 ##Week2
 #Service Worker
