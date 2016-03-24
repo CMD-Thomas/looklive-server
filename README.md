@@ -5,10 +5,8 @@ The feed can be found on [https://thomasmachielsen.me](https://thomasmachielsen.
 I started out the overview page with a whooping 6.9seconds. In this branch the overview page on a first load has been reduced to 3.8s. It gets even better on the second visit: a mere 970ms. 
 ![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/finalweek.jpg)
 
-
 For the detail page I started out with 941ms and reduced that  on a second load to a mere 190ms. Service workers are awesome. 
 ![https://thomasmachielsen.me](http://thomasmachielsen.nl/img/detailklaar.jpg)
-
 
 ##Week3 - Well that went fast
 
